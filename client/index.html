@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
+    
+    <form>
+      <input 
+        type="text"
+        id="title"
+        placeholder="Enter the album title">
+      <input
+      type="text"
+      id="artist"
+      placeholder="Enter the artist name">
+      <input
+      type="text"
+      id="rating"
+      placeholder="Rate it out of 10">
+      <input
+      type="text"
+      id="imgURL"
+      placeholder="Enter the album cover URL">
+      <button>add album</button>
+    </form>
+    <h1>Albums</h1>
+    <section class="headers">
+      <p class="album-cover-header">Album Cover</p>
+      <p class="album-title-header">Album Title</p>
+      <p class="artist-name-header">Artist Name</p>
+      <p class="album-rating-header">Album Rating</p>
+    </section>
+    <section id="album-container"></section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js">
+    </script>
+  </body>
+</html>
