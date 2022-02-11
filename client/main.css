@@ -1,6 +1,7 @@
 .album-cover-image {
-    width: 200px;
+    width: 100%;
     margin: 10px;
+    grid-column-start: 1;
 }
 
 .album-card {
@@ -15,6 +16,8 @@
 
 .title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-column-start: 2;
+    margin: auto;
 }
 
 .artist {
@@ -39,15 +42,30 @@ body {
 }
 
 .delete-button {
-    margin: 10px;
+    margin: auto;
     width: 100px;
     justify-content: center;
     grid-row-start: 5;
 }
 
+form {
+    display: grid;
+    margin-top: 6px;
+}
+
+form input {
+    margin-bottom: 4px;
+    width: 20%;
+}
+
+form button {
+    width: 10%;
+}
+
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
+    margin: 10px;
     margin-bottom: 0;
 
 }
@@ -58,6 +76,7 @@ h1 {
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 26px;
+    margin: 10px;
     margin-top: -25px;
     margin-bottom: 0;
 }
